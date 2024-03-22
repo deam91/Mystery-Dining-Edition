@@ -319,10 +319,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_map_animations
-      sha256: b21fbfc0694b68470d7c986009d5ad883c8841aded74fbc7b0f61db10f48c33f
+      sha256: e4b929632b43a7939ce07a7cdb05613abb25e1996c9767c16469d0cbb9e1c4a9
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.3"
+    version: "0.6.0"
   flutter_map_cache:
     dependency: "direct main"
     description:
