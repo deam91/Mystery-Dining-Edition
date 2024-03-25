@@ -1,0 +1,45 @@
+{
+    "id": "veq1Bl1DW3UWMekZJUsG1Q",
+    "alias": "gramercy-tavern-new-york",
+    "name": "Gramercy Tavern",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/900SU9SPxQFnfN0mXBt57g/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/gramercy-tavern-new-york?adjust_creative=COMbUy4yG18rJMi_FBcUGw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=COMbUy4yG18rJMi_FBcUGw",
+    "review_count": 3466,
+    "categories": [
+        {
+            "alias": "newamerican",
+            "title": "New American"
+        }
+    ],
+    "rating": 4.4,
+    "coordinates": {
+        "latitude": 40.73844,
+        "longitude": -73.98825
+    },
+    "transactions": [
+        "pickup"
+    ],
+    "location": {
+        "address1": "42 E 20th St",
+        "address2": "",
+        "address3": "",
+        "city": "New York",
+        "zip_code": "10003",
+        "country": "US",
+        "state": "NY",
+        "display_address": [
+            "42 E 20th St",
+            "New York, NY 10003"
+        ]
+    },
+    "phone": "+12124770777",
+    "display_phone": "(212) 477-0777",
+    "distance": 3695.6399277648,
+    "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.gramercytavern.com/menus/gramercy-tavern-dining-room/",
+        "open24_hours": null,
+        "waitlist_reservation": true
+    }
+}
