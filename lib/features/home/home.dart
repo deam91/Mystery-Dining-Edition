@@ -1,2 +1,2 @@
-export './cubit/home_cubit.dart';
 export './view/view.dart';
+export 'view/cubit/home_cubit.dart';
