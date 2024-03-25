@@ -2,6 +2,8 @@
 
 A project that combines the power of the Yelp Fusion API with the thrill of culinary discovery
 
+Video showcasing the app [here](https://drive.google.com/file/d/1k9dQ2JnseuUR6RSHQRnjUKRUTt2nGTIp/view?usp=sharing)
+
 ---
 
 ## Core Features
