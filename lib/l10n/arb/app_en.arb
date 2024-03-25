@@ -1,7 +1,7 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
+    "error_connection": "Connection Error",
+    "error_server": "Server Error",
+    "error_unauthorized": "Unauthorized Access",
+    "error_unknow": "Something goes wrong"
 }

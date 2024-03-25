@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mystery_dining_edition/features/home/home.dart';
+import 'package:mystery_dining_edition/common/routes/routes.dart';
 import 'package:mystery_dining_edition/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -7,16 +7,17 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
+    return MaterialApp.router(
+      theme: ThemeData.dark(
+        useMaterial3: true,
+      ).copyWith(
         appBarTheme: AppBarTheme(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         ),
-        useMaterial3: true,
       ),
+      routerConfig: router,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const HomePage(),
     );
   }
 }

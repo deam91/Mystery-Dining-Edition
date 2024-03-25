@@ -1,7 +1,7 @@
 {
     "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
-    }
+    "error_connection": "Error de conexión",
+    "error_server": "Error de servidor",
+    "error_unauthorized": "Acceso restringido",
+    "error_unknow": "Algo salió mal"
 }
