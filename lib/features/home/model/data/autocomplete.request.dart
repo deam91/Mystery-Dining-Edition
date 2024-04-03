@@ -7,9 +7,9 @@ part 'autocomplete.request.g.dart';
 class AutocompleteRequestModel with _$AutocompleteRequestModel {
   const factory AutocompleteRequestModel({
     required String text,
-    double? latitude,
-    double? longitude,
-    String? locale,
+    @JsonKey(includeIfNull: false) double? latitude,
+    @JsonKey(includeIfNull: false) double? longitude,
+    @JsonKey(includeIfNull: false) String? locale,
   }) = _AutocompleteRequestModel;
 
   factory AutocompleteRequestModel.fromJson(Map<String, dynamic> json) =>

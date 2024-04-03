@@ -22,8 +22,11 @@ AutocompleteRequestModel _$AutocompleteRequestModelFromJson(
 /// @nodoc
 mixin _$AutocompleteRequestModel {
   String get text => throw _privateConstructorUsedError;
+  @JsonKey(includeIfNull: false)
   double? get latitude => throw _privateConstructorUsedError;
+  @JsonKey(includeIfNull: false)
   double? get longitude => throw _privateConstructorUsedError;
+  @JsonKey(includeIfNull: false)
   String? get locale => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -38,7 +41,11 @@ abstract class $AutocompleteRequestModelCopyWith<$Res> {
           $Res Function(AutocompleteRequestModel) then) =
       _$AutocompleteRequestModelCopyWithImpl<$Res, AutocompleteRequestModel>;
   @useResult
-  $Res call({String text, double? latitude, double? longitude, String? locale});
+  $Res call(
+      {String text,
+      @JsonKey(includeIfNull: false) double? latitude,
+      @JsonKey(includeIfNull: false) double? longitude,
+      @JsonKey(includeIfNull: false) String? locale});
 }
 
 /// @nodoc
@@ -90,7 +97,11 @@ abstract class _$$AutocompleteRequestModelImplCopyWith<$Res>
       __$$AutocompleteRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String text, double? latitude, double? longitude, String? locale});
+  $Res call(
+      {String text,
+      @JsonKey(includeIfNull: false) double? latitude,
+      @JsonKey(includeIfNull: false) double? longitude,
+      @JsonKey(includeIfNull: false) String? locale});
 }
 
 /// @nodoc
@@ -136,7 +147,10 @@ class __$$AutocompleteRequestModelImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$AutocompleteRequestModelImpl implements _AutocompleteRequestModel {
   const _$AutocompleteRequestModelImpl(
-      {required this.text, this.latitude, this.longitude, this.locale});
+      {required this.text,
+      @JsonKey(includeIfNull: false) this.latitude,
+      @JsonKey(includeIfNull: false) this.longitude,
+      @JsonKey(includeIfNull: false) this.locale});
 
   factory _$AutocompleteRequestModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$AutocompleteRequestModelImplFromJson(json);
@@ -144,10 +158,13 @@ class _$AutocompleteRequestModelImpl implements _AutocompleteRequestModel {
   @override
   final String text;
   @override
+  @JsonKey(includeIfNull: false)
   final double? latitude;
   @override
+  @JsonKey(includeIfNull: false)
   final double? longitude;
   @override
+  @JsonKey(includeIfNull: false)
   final String? locale;
 
   @override
@@ -190,10 +207,11 @@ class _$AutocompleteRequestModelImpl implements _AutocompleteRequestModel {
 
 abstract class _AutocompleteRequestModel implements AutocompleteRequestModel {
   const factory _AutocompleteRequestModel(
-      {required final String text,
-      final double? latitude,
-      final double? longitude,
-      final String? locale}) = _$AutocompleteRequestModelImpl;
+          {required final String text,
+          @JsonKey(includeIfNull: false) final double? latitude,
+          @JsonKey(includeIfNull: false) final double? longitude,
+          @JsonKey(includeIfNull: false) final String? locale}) =
+      _$AutocompleteRequestModelImpl;
 
   factory _AutocompleteRequestModel.fromJson(Map<String, dynamic> json) =
       _$AutocompleteRequestModelImpl.fromJson;
@@ -201,10 +219,13 @@ abstract class _AutocompleteRequestModel implements AutocompleteRequestModel {
   @override
   String get text;
   @override
+  @JsonKey(includeIfNull: false)
   double? get latitude;
   @override
+  @JsonKey(includeIfNull: false)
   double? get longitude;
   @override
+  @JsonKey(includeIfNull: false)
   String? get locale;
   @override
   @JsonKey(ignore: true)

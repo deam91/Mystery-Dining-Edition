@@ -16,10 +16,19 @@ _$AutocompleteRequestModelImpl _$$AutocompleteRequestModelImplFromJson(
     );
 
 Map<String, dynamic> _$$AutocompleteRequestModelImplToJson(
-        _$AutocompleteRequestModelImpl instance) =>
-    <String, dynamic>{
-      'text': instance.text,
-      'latitude': instance.latitude,
-      'longitude': instance.longitude,
-      'locale': instance.locale,
-    };
+    _$AutocompleteRequestModelImpl instance) {
+  final val = <String, dynamic>{
+    'text': instance.text,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('latitude', instance.latitude);
+  writeNotNull('longitude', instance.longitude);
+  writeNotNull('locale', instance.locale);
+  return val;
+}
