@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -6,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
-import 'package:isar/isar.dart';
 import 'package:mystery_dining_edition/common/http/api_provider.dart';
 import 'package:mystery_dining_edition/common/models/bussiness/bussiness.dart';
 import 'package:mystery_dining_edition/features/home/model/data/autocomplete.request.dart';
@@ -89,6 +87,44 @@ void main() {
       );
       expect(response, isNotNull);
       expect(response?.length, equals(1));
+    });
+
+    test('get multiple mystery suggestions', () async {
+      const model = BussinessReqModel(
+        location: 'NY',
+        term: 'restaurants',
+        limit: 10,
+        offset: 0,
+      );
+      final (dio, adapter) = setupDio();
+
+      final result = BussinessResModel(
+        businesses: List.generate(
+          10,
+          (index) => Bussiness.empty(),
+        ),
+      );
+      adapter.onGet(
+        RegExp('.*'),
+        (server) => server.reply(
+          200,
+          result.toJson(),
+        ),
+        queryParameters: model.toJson(),
+      );
+
+      final service = HomeService(
+        repository: HomeRepository(
+          apiProvider: ApiProvider(dio: dio),
+        ),
+      );
+      final response = await service.getMysterySuggestion(
+        location: 'NY',
+        term: 'restaurants',
+        offset: 0,
+      );
+      expect(response, isNotNull);
+      expect(response?.length, equals(10));
     });
   });
 }
